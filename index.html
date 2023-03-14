@@ -1,7 +1,48 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<meta charset="utf-8">
+	<title>Your Personal Website - Home</title>
+	<link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<header>
+		<h1>Your Name - Personal Website</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="projects.html">Projects</a></li>
+                <li><a href="cv.html">CV</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<h2>Welcome to my website!</h2>
+		<p>Here you'll find my latest blog posts and my portfolio of projects.</p>
+		<p>Click the button below to subscribe to my newsletter and get updates on my latest work.</p>
+		<button id="subscribe-btn" class="btn">Subscribe</button>
+	</main>
+	
+	<footer>
+		<p>&copy; Your Name</p>
+	</footer>
+
+	<script>
+		// Get the button element
+		const subscribeBtn = document.getElementById('subscribe-btn');
+
+		// Add a click event listener to the button
+		subscribeBtn.addEventListener('click', () => {
+			// Prompt the user to enter their email address
+			const email = prompt('Enter your email address to subscribe:');
+
+			// Display a confirmation message
+			if (email) {
+				alert(`Thanks for subscribing, ${email}!`);
+			}
+		});
+	</script>
 </body>
 </html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Your Personal Website - Projects</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Your Name - Projects</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="projects.html">Projects</a></li>
+                <li><a href="cv.html">CV</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<h2>My Projects</h2>
+		<ul>
+			<li><a href="https://github.com/yourusername/project1">Project 1</a></li>
+			<li><a href="https://github.com/yourusername/project2">Project 2</a></li>
+			<li><a href="https://github.com/yourusername/project3">Project 3</a></li>
+		</ul>
+	</main>
+	
+	<footer>
+		<p>Copyright &copy; Your Name</p>
+	</footer>
+
+    <script>
+		// Get all the button elements on the page
+		const buttons = document.querySelectorAll('.btn');
+
+		// Loop through each button and add a click event listener
+		buttons.forEach(button => {
+			button.addEventListener('click', () => {
+				// Get the parent <li> element of the button
+				const li = button.parentElement;
+
+				// Get the <a> element inside the <li> element
+				const link = li.querySelector('a');
+
+				// Get the URL of the <a> element
+				const url = link.getAttribute('href');
+
+				// Open the URL in a new window or tab
+				window.open(`https://github.com${url}`, '_blank');
+
+				// Change the text of the button
+				button.textContent = 'Starred!';
+			});
+		});
+	</script>
+</body>
+</html>

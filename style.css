@@ -1,0 +1,86 @@
+/* Global styles */
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 2em 1em;
+}
+
+footer {
+	background-color: #eee;
+	color: #666;
+	padding: 1em;
+	text-align: center;
+}
+
+/* Specific page styles */
+
+h1 {
+	font-size: 2.5em;
+	margin: 0;
+}
+
+h2 {
+	font-size: 2em;
+	margin-top: 0;
+}
+
+h3 {
+	font-size: 1.5em;
+	margin-top: 0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin-bottom: 1em;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #666;
+	text-decoration: underline;
+}
